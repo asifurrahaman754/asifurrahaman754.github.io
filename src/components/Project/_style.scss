@@ -1,0 +1,87 @@
+@import "../Techtool/style";
+@import "../../base";
+@import "../Hero/style";
+
+.projects_container {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 20px;
+
+  .projects_title {
+    @include headingStyle();
+  }
+
+  .projects_wrapper {
+    .project_card {
+      display: flex;
+      gap: 2rem;
+      background: white;
+      justify-content: center;
+      max-width: 850px;
+      margin: 0 auto 2rem auto;
+      padding: 2rem 1rem;
+      box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.15);
+
+      @media (max-width: 780px) {
+        flex-direction: column;
+      }
+
+      .project_details {
+        .project_interect {
+          margin-top: 2rem;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 1rem;
+          justify-content: space-between;
+
+          .case_study {
+            background: #0e153a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+            font-family: "Montserrat";
+            font-weight: 500;
+            display: flex;
+            cursor: pointer;
+
+            span {
+              margin-left: 0.5rem;
+            }
+          }
+
+          .project_links {
+            .project_live,
+            .project_github {
+              font-weight: bold;
+              font-family: "Montserrat";
+              cursor: pointer;
+            }
+
+            .project_live {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+
+      .project_img {
+        max-width: 450px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border: 2px solid #3d5af1;
+        }
+      }
+    }
+  }
+
+  .more_projects {
+    @include ButtonStyle();
+    margin: 3rem auto 0 auto;
+    display: block;
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../base";
+
+.nav_container {
+  background-color: $primary_color;
+  height: $nav-height;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  .nav_max {
+    max-width: $max_width;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin: 0 auto;
+
+    .brand_logo {
+      font-family: "Caveat", cursive;
+      color: white;
+      padding-right: 20px;
+    }
+
+    nav {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none;
+
+      @media (max-width: 450px) {
+        mask-image: -webkit-linear-gradient(
+          to right,
+          transparent,
+          black 20px,
+          black 90%,
+          transparent
+        );
+        -webkit-mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 60px,
+          black 90%,
+          transparent
+        );
+      }
+
+      .nav_link {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+        transition: all 0.2s;
+
+        &:hover {
+          color: #c9c9c9;
+        }
+      }
+    }
+
+    nav::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+}
