@@ -1,5 +1,6 @@
 import Blogs from "../Blogs";
 import Contact from "../Contact";
+import Footer from "../Footer";
 import Hero from "../Hero";
 import Navbar from "../Navbar";
 import Projects from "../Project";
@@ -16,6 +17,7 @@ export default function HomeScreen() {
         <Blogs />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

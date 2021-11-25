@@ -1,0 +1,102 @@
+@import "../../base";
+
+.contact_section {
+  background: $primary-color;
+  color: white;
+  padding: 100px 0px;
+
+  .contact_wrap {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+
+    .contact_form_wrap {
+      font-family: "Montserrat", sans-serif;
+      max-width: 600px;
+      width: 100%;
+
+      .contact_head {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .contact_sub {
+        margin-top: 0.5rem;
+        color: #cbcbcb;
+        max-width: 500px;
+        line-height: 1.5rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        input,
+        textarea {
+          margin-bottom: 2rem;
+          background: none;
+          outline: none;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          color: #cbcbcb;
+          border: none;
+          padding: 10px 15px;
+          border-bottom: 1px solid #cbcbcb;
+        }
+
+        button {
+          width: max-content;
+          padding: 8px 20px;
+          background: $secondary-color;
+          font-size: 1rem;
+          color: white;
+          font-family: "Montserrat", sans-serif;
+          border: none;
+          margin-top: 1rem;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .details_box {
+      background: #1b2767;
+      padding: 20px;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      flex: 1;
+      max-width: 600px;
+      border-radius: 3px;
+
+      h3 {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h5 {
+        font-weight: 400;
+        color: #667fff;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      h5:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
