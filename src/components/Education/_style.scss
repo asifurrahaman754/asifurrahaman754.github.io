@@ -1,0 +1,59 @@
+@import "../../base";
+
+@mixin headingStyle {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #3d5af1;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50px;
+  }
+
+  span {
+    display: flex;
+    margin-right: 0.5rem;
+  }
+}
+
+.education_container {
+  background: $primary-color;
+  padding: 50px 20px 100px 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  .header {
+    @include headingStyle();
+  }
+
+  .education_deg {
+    margin-bottom: 1rem;
+
+    .title {
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    .time {
+      font-size: 0.8rem;
+      color: #c6c6c6;
+      margin: 5px 0;
+      display: block;
+    }
+
+    .institute {
+      color: #8e9ffb;
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+  }
+}

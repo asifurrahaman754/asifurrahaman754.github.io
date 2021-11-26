@@ -64,3 +64,34 @@ export const projects = [
     gitub: "https://github.com/asifurrahaman754/covid-tracker-v2.0",
   },
 ];
+
+export const certificates = [
+  {
+    img: "/assets/img/certificates/bitdegree.jpg",
+    name: "Web design",
+  },
+  {
+    img: "/assets/img/certificates/eshikhon.jpeg",
+    name: "Web Development",
+  },
+  {
+    img: "/assets/img/certificates/freecode1.png",
+    name: "Javascirpt Algorithm and Data Sructure",
+  },
+  {
+    img: "/assets/img/certificates/freecode2.png",
+    name: "Responsive Web design",
+  },
+  {
+    img: "/assets/img/certificates/gazi.jpg",
+    name: "Office Application",
+  },
+  {
+    img: "/assets/img/certificates/google.jpg",
+    name: "The Faundamental of Digital Marketing",
+  },
+  {
+    img: "/assets/img/certificates/spoken.jpg",
+    name: "Spoken English",
+  },
+];

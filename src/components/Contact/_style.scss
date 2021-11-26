@@ -49,6 +49,11 @@
           border: none;
           padding: 10px 15px;
           border-bottom: 1px solid #cbcbcb;
+          transition: all 0.3s;
+
+          &:focus {
+            border-bottom-color: $secondary-color;
+          }
         }
 
         button {
