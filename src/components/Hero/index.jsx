@@ -14,7 +14,11 @@ export default function Hero() {
           I am a freelance web developer and a UI designer specializing in
           Frontend. Checkout my work below and feel free to get in touch
         </h5>
-        <a onClick={projectSection.onClick} href="#projects" className="project_btn">
+        <a
+          onClick={projectSection.onClick}
+          href="#projects"
+          className="project_btn"
+        >
           Projects
         </a>
 

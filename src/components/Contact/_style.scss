@@ -15,6 +15,20 @@
     gap: 5rem;
     align-items: center;
 
+    .form_confirmation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      color: #ffffff;
+      font-size: 1.5rem;
+
+      span {
+        display: inline-flex;
+        margin-left: 0.5rem;
+      }
+    }
+
     .contact_form_wrap {
       font-family: "Montserrat", sans-serif;
       max-width: 600px;
@@ -50,6 +64,7 @@
           padding: 10px 15px;
           border-bottom: 1px solid #cbcbcb;
           transition: all 0.3s;
+          font-size: 1rem;
 
           &:focus {
             border-bottom-color: $secondary-color;
@@ -65,12 +80,35 @@
           font-family: "Montserrat", sans-serif;
           border: none;
           margin-top: 1rem;
-          border-radius: 50px;
+          border-radius: 5px;
           cursor: pointer;
+          display: flex;
           transition: all 0.2s;
 
           &:hover {
             opacity: 0.8;
+          }
+
+          .spinner {
+            border: 2px solid $primary-color;
+            border-right-color: transparent;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 0.8s;
+            margin-left: 0.5rem;
+          }
+
+          @keyframes rotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
           }
         }
       }

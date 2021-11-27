@@ -1,4 +1,5 @@
 import { Section } from "react-scroll-section";
+
 import "./_style.scss";
 import { projects } from "../../data";
 import ProjectItem from "./ProjectItem";

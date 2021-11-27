@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
+import "./_style.scss"
 
 export default function BlogItem({ item }) {
   const [imageDidNotLoad, setimageDidNotLoad] = useState(false);
