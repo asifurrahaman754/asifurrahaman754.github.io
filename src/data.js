@@ -11,7 +11,6 @@ export const tools = [
     alt: "react",
     path: "/assets/img/react.svg",
   },
-
   {
     alt: "github",
     path: "/assets/img/github.svg",

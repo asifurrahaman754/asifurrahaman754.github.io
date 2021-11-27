@@ -20,6 +20,11 @@
     img {
       width: 100%;
       border: 1px solid $secondary-color;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
