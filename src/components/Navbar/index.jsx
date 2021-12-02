@@ -12,9 +12,6 @@ export default function Navbar() {
       <div className="nav_max">
         <h1 className="brand_logo">Asifur</h1>
         <nav>
-          <Link className="nav_link" to="/">
-            Home
-          </Link>
           <Link
             className="nav_link"
             to=""

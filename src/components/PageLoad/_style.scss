@@ -1,0 +1,16 @@
+@import "../../base";
+
+.pageload_container{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: $primary-color;
+
+    .laoding{
+        font-size: 3rem;
+        color: white;
+    }
+}

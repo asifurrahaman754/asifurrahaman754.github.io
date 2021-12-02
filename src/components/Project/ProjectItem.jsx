@@ -1,8 +1,16 @@
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function ProjectItem({ item }) {
+  const navigate = useNavigate();
+  const path = item.name.split(" ").join("-");
+
+  const handleClick = () => {
+    navigate(`/portfolio/${path}`);
+  };
+
   return (
     <div className="project_card">
       <div className="project_details">
@@ -10,7 +18,7 @@ export default function ProjectItem({ item }) {
         <p className="project_desc">{item.desc}</p>
 
         <div className="project_interect">
-          <button className="case_study">
+          <button onClick={handleClick} className="case_study">
             Case study{" "}
             <span>
               <AiOutlineArrowRight />
