@@ -10,6 +10,7 @@ const AboutScreen = React.lazy(() => import("./pages/AboutScreen"));
 const HomeScreen = React.lazy(() => import("./pages/HomeScreen"));
 const Blogs = React.lazy(() => import("./pages/Blogs"));
 const ProjectScreen = React.lazy(() => import("./pages/ProjectScreen"));
+const AllProject = React.lazy(() => import("./pages/AllProject"));
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/about" element={<AboutScreen />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/portfolio/:name" element={<ProjectScreen />} />
+              <Route path="/projects" element={<AllProject />} />
             </Routes>
           </Router>
         </Suspense>

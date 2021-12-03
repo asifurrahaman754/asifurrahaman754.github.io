@@ -2,6 +2,7 @@ import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "./_style.scss";
 
 export default function ProjectItem({ item }) {
   const navigate = useNavigate();
@@ -25,12 +26,12 @@ export default function ProjectItem({ item }) {
             </span>
           </button>
           <div className="project_links">
-            <span className="project_live">
+            <a target="_blank" href={item.live} className="project_live">
               live <BsBoxArrowInUpRight />
-            </span>
-            <span className="project_github">
+            </a>
+            <a target="_blank" href={item.github} className="project_github">
               Github <BsBoxArrowInUpRight />
-            </span>
+            </a>
           </div>
         </div>
       </div>

@@ -10,8 +10,14 @@ export default function Navbar() {
   return (
     <header className="nav_container">
       <div className="nav_max">
-        <h1 className="brand_logo">Asifur</h1>
+        <Link to="/"><h1 className="brand_logo">Asifur</h1></Link>
         <nav>
+        <Link
+            className="nav_link"
+            to="/"
+          >
+            Home
+          </Link>
           <Link
             className="nav_link"
             to=""

@@ -2,6 +2,9 @@ const netflix = "NETFLIX Clone";
 const youtube = "YouTube Clone";
 const AiNews = "AI News App";
 const covid = "Covid Tracker";
+const slack = "Slack Clone";
+const disney = "Disney Clone";
+const Color_Generator = "Color Generator";
 
 const Data = [
   {
@@ -60,6 +63,50 @@ const Data = [
     images: [
       "/assets/img/Projects/Covid/covid.png",
       "/assets/img/Projects/Covid/covid2.jpg",
+    ],
+    descripion:
+      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+    tools: ["React js", "Sass", "bootstrap", "Firebase"],
+  },
+  {
+    id: slack.split(" ").join("-"),
+    title: slack,
+    subtitle:
+      "This is a Slack clone app where user can create different rooms and chat in real time with roommates.",
+    live: "https://slack-clone754.netlify.app/",
+    images: [
+      "/assets/img/Projects/slack/slack.png",
+      "/assets/img/Projects/slack/slack2.png",
+      "/assets/img/Projects/slack/slack3.png",
+    ],
+    descripion:
+      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+    tools: ["React js", "Sass", "bootstrap", "Firebase"],
+  },
+  {
+    id: Color_Generator.split(" ").join("-"),
+    title: Color_Generator,
+    subtitle:
+      "This app generates eight random color scemes, which you can use in your project.",
+    live: "https://asifurrahaman754.github.io/color-generator/",
+    images: [
+      "/assets/img/colorgenerator.png",
+    ],
+    descripion:
+      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+    tools: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: disney.split(" ").join("-"),
+    title: disney,
+    subtitle:
+      "This is a Disney clone designd for movies from different categories",
+    live: "https://disney-clone754.netlify.app/",
+    images: [
+      "/assets/img/Projects/disney/disney.png",
+      "/assets/img/Projects/disney/disney2.png",
+      "/assets/img/Projects/disney/disney3.png",
+      "/assets/img/Projects/disney/disney4.png",
     ],
     descripion:
       "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",

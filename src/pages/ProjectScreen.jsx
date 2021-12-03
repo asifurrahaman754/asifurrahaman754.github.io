@@ -17,6 +17,7 @@ export default function ProjectScreen() {
   for (let i = 0; i < Data.length; i++) {
     if (Data[i].id === name) {
       selectedData = Data[i];
+      break;
     }
   }
 
