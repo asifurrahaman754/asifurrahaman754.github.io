@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, forwardRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { GoSmiley } from "react-icons/go";
+import { FiUser } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
 
 const ContactForm = forwardRef(function () {
   const [state, handleSubmit] = useForm("meqnjgwg");
@@ -29,41 +31,66 @@ const ContactForm = forwardRef(function () {
     }
   };
 
+  //change the color of the InputIcon whenever user do focus in input
+  const handleInputFocus = (type, state) => {
+    if (state === "blur") {
+      const el = document.getElementsByClassName(`${type}Icon`)[0];
+      el.style.color = "black";
+    } else {
+      const el = document.getElementsByClassName(`${type}Icon`)[0];
+      el.style.color = "#0b68de";
+    }
+  };
+
   return (
     <>
       {!success ? (
         <div className="contact_form_wrap">
-          <h3 className="contact_head">Contact now</h3>
-          <p className="contact_sub">
-            Have a project or question? Send me a message. I will reply within
-            12 hour
-          </p>
           <form onSubmit={handleSubmit}>
-            <input
-              ref={nameRef}
-              required
-              type="text"
-              placeholder="Name"
-              name="name"
-            />
-            <input
-              ref={mailRef}
-              required
-              type="email"
-              placeholder="Email"
-              name="Email"
-            />
+            <label htmlFor="name">Name</label>
+            <div className="input_wrap">
+              <span className="inputIcon nameIcon">
+                <FiUser />
+              </span>
+              <input
+                onFocus={() => handleInputFocus("name")}
+                onBlur={() => handleInputFocus("name", "blur")}
+                ref={nameRef}
+                required
+                type="text"
+                name="name"
+                id="name"
+              />
+            </div>
+
+            <label htmlFor="Email">Email</label>
+            <div className="input_wrap">
+              <span className="inputIcon EmailIcon">
+                <AiOutlineMail />
+              </span>
+              <input
+                onFocus={() => handleInputFocus("Email")}
+                onBlur={() => handleInputFocus("Email", "blur")}
+                ref={mailRef}
+                required
+                type="email"
+                name="Email"
+                id="Email"
+              />
+            </div>
             <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
             />
-            <input type="text" placeholder="Subject" name="subject" />
+            <label htmlFor="Message">Message</label>
             <textarea
               required
               placeholder="write your message"
               name="message"
+              rows="8"
               ref={messageRef}
+              id="Message"
             ></textarea>
             <button
               onClick={clickSubmit}

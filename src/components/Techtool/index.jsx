@@ -12,6 +12,7 @@ export default function Techtool() {
             key={i}
             alt={item.alt}
             src={item.path}
+            title={item.alt}
             className="tool_image"
           />
         ))}

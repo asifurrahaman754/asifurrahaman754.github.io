@@ -1,6 +1,5 @@
 import Blogs from "../components/Blogs";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Project";
@@ -17,7 +16,6 @@ export default function HomeScreen() {
         <Blogs />
         <Contact />
       </main>
-      <Footer />
     </>
   );
 }

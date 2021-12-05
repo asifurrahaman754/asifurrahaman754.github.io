@@ -12,7 +12,6 @@
     @include headingStyle();
   }
 
-
   .more_projects {
     @include ButtonStyle();
     margin: 3rem auto 0 auto;
@@ -36,6 +35,10 @@
   }
 
   .project_details {
+    .project_desc {
+      margin-top: 0.5rem;
+      line-height: 1.3rem;
+    }
     .project_interect {
       margin-top: 2rem;
       display: flex;

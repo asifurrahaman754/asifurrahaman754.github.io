@@ -12,21 +12,34 @@ export const tools = [
     path: "/assets/img/react.svg",
   },
   {
-    alt: "github",
-    path: "/assets/img/github.svg",
-  },
-  {
     alt: "redux",
     path: "/assets/img/redux.svg",
   },
   {
-    alt: "firebase",
-    path: "/assets/img/firebase.png",
+    alt: "sass",
+    path: "/assets/img/sass.svg",
+  },
+  {
+    alt: "bootstrap",
+    path: "/assets/img/bootstrap.svg",
+  },
+  {
+    alt: "tailwind",
+    path: "/assets/img/tailwind.svg",
   },
   {
     alt: "git",
     path: "/assets/img/git.png",
   },
+  {
+    alt: "github",
+    path: "/assets/img/github.svg",
+  },
+  {
+    alt: "firebase",
+    path: "/assets/img/firebase.png",
+  },
+
   {
     alt: "mongo db",
     path: "/assets/img/mongo.svg",
