@@ -1,22 +1,5 @@
 @import "../../base";
-
-@mixin headingStyle {
-  font-family: "Montserrat";
-  font-size: 1.3rem;
-  margin-bottom: 3rem;
-  font-weight: 500;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 50px;
-    height: 4px;
-    background: #3d5af1;
-    position: absolute;
-    bottom: -10px;
-    border-radius: 50px;
-  }
-}
+@import "../../mixins";
 
 .techTool_container {
   padding: 100px 0 100px 20px;

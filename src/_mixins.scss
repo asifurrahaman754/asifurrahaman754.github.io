@@ -1,0 +1,33 @@
+@mixin ButtonStyle() {
+  text-decoration: none;
+  color: white;
+  background: $secondary_color;
+  padding: 10px 55px;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: #3d5af1d1;
+  }
+}
+
+@mixin headingStyle {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #3d5af1;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50px;
+  }
+}

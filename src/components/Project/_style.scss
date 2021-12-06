@@ -1,6 +1,5 @@
-@import "../Techtool/style";
 @import "../../base";
-@import "../Hero/style";
+@import "../../mixins";
 
 .projects_container {
   max-width: $max-width;
