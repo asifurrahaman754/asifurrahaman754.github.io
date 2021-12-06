@@ -19,7 +19,7 @@ const Data = [
       "/assets/img/Projects/netflix-clone/netflix4.png",
     ],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     tools: ["React js", "Sass", "Firebase"],
   },
   {
@@ -35,7 +35,7 @@ const Data = [
       "/assets/img/Projects/youtube/yt4.png",
     ],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     tools: ["React js", "Sass", "bootstrap", "Firebase"],
   },
   {
@@ -51,7 +51,7 @@ const Data = [
       "/assets/img/Projects/youtube/yt4.png",
     ],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     tools: ["React js", "Sass", "bootstrap", "Firebase"],
   },
   {
@@ -65,7 +65,7 @@ const Data = [
       "/assets/img/Projects/Covid/covid2.jpg",
     ],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     tools: ["React js", "Sass", "bootstrap", "Firebase"],
   },
   {
@@ -80,7 +80,7 @@ const Data = [
       "/assets/img/Projects/slack/slack3.png",
     ],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     tools: ["React js", "Sass", "bootstrap", "Firebase"],
   },
   {
@@ -89,11 +89,9 @@ const Data = [
     subtitle:
       "This app generates eight random color scemes, which you can use in your project.",
     live: "https://asifurrahaman754.github.io/color-generator/",
-    images: [
-      "/assets/img/colorgenerator.png",
-    ],
+    images: ["/assets/img/colorgenerator.png"],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     tools: ["HTML", "CSS", "JavaScript"],
   },
   {
@@ -109,7 +107,7 @@ const Data = [
       "/assets/img/Projects/disney/disney4.png",
     ],
     descripion:
-      "At the time I was still using BackboneJS for the client side routing, although the views were renderd directly in the Microsoft C# MVC's back-end. The client side javascript was entirely modularized with RequireJS, which is awesome for code maintainance and scalability.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     tools: ["React js", "Sass", "bootstrap", "Firebase"],
   },
 ];

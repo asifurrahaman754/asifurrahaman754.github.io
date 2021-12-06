@@ -7,7 +7,7 @@ import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
   const navigate = useNavigate();
-  
+
   const handleClick = () => {
     navigate("/projects");
   };
@@ -21,7 +21,9 @@ export default function Projects() {
         ))}
       </div>
 
-      <button onClick={handleClick} className="more_projects">More projects</button>
+      <button onClick={handleClick} className="more_projects">
+        More projects
+      </button>
     </Section>
   );
 }

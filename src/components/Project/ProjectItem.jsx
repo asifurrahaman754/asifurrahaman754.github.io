@@ -1,14 +1,24 @@
+import { useContext } from "react";
+
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useLocation } from "react-router";
+
 import "./_style.scss";
+import { BackContextProvider } from "../../context/BackContext";
 
 export default function ProjectItem({ item }) {
   const navigate = useNavigate();
+  const location = useLocation();
   const path = item.name.split(" ").join("-");
+  const {
+    pathData: [preivouspath, setpreivouspath],
+  } = useContext(BackContextProvider);
 
   const handleClick = () => {
+    setpreivouspath(location.pathname);
     navigate(`/portfolio/${path}`);
   };
 

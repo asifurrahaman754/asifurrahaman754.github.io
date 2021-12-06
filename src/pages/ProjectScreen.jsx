@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
@@ -8,9 +10,13 @@ import "./_Projectscreen.scss";
 import Data from "../ProjectData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { BackContextProvider } from "../context/BackContext";
 
 export default function ProjectScreen() {
   const { name } = useParams();
+  const {
+    pathData: [preivouspath, setpreivouspath],
+  } = useContext(BackContextProvider);
 
   let selectedData;
 
@@ -35,7 +41,7 @@ export default function ProjectScreen() {
 
   return (
     <div className="projectScreen_container">
-      <Link to="/" className="back">
+      <Link to={preivouspath} className="back">
         <MdOutlineArrowBackIosNew />
       </Link>
 
