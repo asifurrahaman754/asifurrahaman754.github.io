@@ -14,13 +14,26 @@ export default function Hero() {
           I am a freelance web developer and a UI designer specializing in
           Frontend. Checkout my work below and feel free to get in touch
         </h5>
-        <a
-          onClick={projectSection.onClick}
-          href="#projects"
-          className="project_btn"
-        >
-          Projects
-        </a>
+        <div className="hero_btn">
+          <a
+            onClick={projectSection.onClick}
+            href="#projects"
+            className="project_btn"
+          >
+            <img src="/assets/img/project.svg" alt="project icon" />
+            Projects
+          </a>
+
+          <a
+            href="#projects"
+            className="resume_btn"
+            href="/assets/Resume.pdf"
+            download
+          >
+            <img src="/assets/img/resume.svg" alt="resume icon" />
+            Resume
+          </a>
+        </div>
 
         <a href="#techTools" className="down_arrow">
           <FiChevronsDown />

@@ -4,14 +4,11 @@
   background: $secondary_color;
   padding: 10px 55px;
   font-size: 1.1rem;
-  margin-top: 1.5rem;
   transition: all 0.2s;
   cursor: pointer;
+  display: flex;
   border: none;
-
-  &:hover {
-    background-color: #3d5af1d1;
-  }
+  align-items: center;
 }
 
 @mixin headingStyle {
