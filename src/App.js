@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ScrollingProvider } from "react-scroll-section";
 import PageLoad from "./components/PageLoad";
+import NotFound from "./pages/404";
 
 import ScrollTopTop from "./ScrollTopTop";
 import "./_app.scss";
@@ -25,6 +26,7 @@ function App() {
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/portfolio/:name" element={<ProjectScreen />} />
               <Route path="/projects" element={<AllProject />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
         </Suspense>
