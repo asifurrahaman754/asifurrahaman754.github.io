@@ -27,8 +27,9 @@ export default function Hero() {
           <a
             href="#projects"
             className="resume_btn"
+            title="nice resume"
             href="/assets/Resume.pdf"
-            download
+            download="AsifurRahaman-resume"
           >
             <img src="/assets/img/resume.svg" alt="resume icon" />
             Resume
