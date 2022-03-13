@@ -1,5 +1,5 @@
 import { Section } from "react-scroll-section";
-import { BsTelephoneFill } from "react-icons/bs";
+import { BsTelephoneFill, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
@@ -48,11 +48,14 @@ export default function Contact() {
             >
               <FaLinkedinIn />
             </a>
-            <a
+            {/* <a
               target="_blank"
               href="https://www.youtube.com/channel/UCSy77Lz6FlduetY6nMlFTOw"
             >
               <FaYoutube />
+            </a> */}
+            <a target="_blank" href="https://twitter.com/asifur754">
+              <BsTwitter />
             </a>
           </div>
         </div>
