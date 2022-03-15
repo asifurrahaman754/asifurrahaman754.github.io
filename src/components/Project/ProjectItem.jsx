@@ -46,7 +46,12 @@ export default function ProjectItem({ item }) {
         </div>
       </div>
       <div className="project_img">
-        <LazyLoadImage alt={item.name} src={item.image} />
+        <LazyLoadImage
+          width="450"
+          height="220"
+          alt={item.name}
+          src={item.image}
+        />
       </div>
     </div>
   );
