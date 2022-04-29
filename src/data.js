@@ -36,6 +36,14 @@ export const tools = [
     path: "/assets/img/github.svg",
   },
   {
+    alt: "PHP",
+    path: "/assets/img/php.svg",
+  },
+  {
+    alt: "MySQL",
+    path: "/assets/img/mysql.svg",
+  },
+  {
     alt: "firebase",
     path: "/assets/img/firebase.png",
   },
@@ -48,18 +56,18 @@ export const tools = [
 
 export const projects = [
   {
-    name: "NETFLIX Clone",
-    desc: "This is a netflix clone designed using a movie API",
-    image: "/assets/img/Projects/netflix-clone/netflix.png",
-    live: "https://netflix-clone754.netlify.app/",
-    github: "https://github.com/asifurrahaman754/Netflix-clone",
-  },
-  {
     name: "YouTube Clone",
     desc: "This is a fully functional YouTube clone created with the original YouTube API",
     image: "/assets/img/Projects/youtube/youtube.png",
     live: "https://yt-clone754.netlify.app",
     github: "https://github.com/asifurrahaman754/youtube-clone",
+  },
+  {
+    name: "Library Management System",
+    desc: "This is a fully functioning Library Management System where an admin can manage his library and a user can collect their favourite book from the library",
+    image: "/assets/img/Projects/library/library.png",
+    live: "http://libassista.rf.gd/",
+    github: "https://github.com/asifurrahaman754/library-management",
   },
   {
     name: "AI News App",
@@ -88,6 +96,13 @@ export const projects = [
     image: "/assets/img/Projects/disney/disney.png",
     live: "https://disney-clone754.netlify.app/",
     github: "https://github.com/asifurrahaman754/Disney-Clone",
+  },
+  {
+    name: "NETFLIX Clone",
+    desc: "This is a netflix clone designed using a movie API",
+    image: "/assets/img/Projects/netflix-clone/netflix.png",
+    live: "https://netflix-clone754.netlify.app/",
+    github: "https://github.com/asifurrahaman754/Netflix-clone",
   },
   {
     name: "Color Generator",

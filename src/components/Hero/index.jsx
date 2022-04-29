@@ -7,7 +7,7 @@ export default function Hero() {
   const projectSection = useScrollSection("portfolio");
 
   return (
-    <div className="hero_container">
+    <div className="hero_container" id="home">
       <div className="hero_bg">
         <h3 className="hero_header">Hi, I'm Asif</h3>
         <h5 className="hero_Subheader">
@@ -26,7 +26,7 @@ export default function Hero() {
 
           <a
             className="resume_btn"
-            href="https://drive.google.com/file/d/1D0VYmVwGnw1ZAP2stb4BtJV9TJBXQbF3/view"
+            href="https://drive.google.com/file/d/1mwzSo4zZKt0zphoV08dmUAhzcAaMvjEH/view"
           >
             <img src="/assets/img/resume.svg" alt="resume icon" />
             Resume

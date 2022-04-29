@@ -4,9 +4,25 @@ const AiNews = "AI News App";
 const covid = "Covid Tracker";
 const slack = "Slack Clone";
 const disney = "Disney Clone";
+const library = "Library Management System";
 const Color_Generator = "Color Generator";
 
 const Data = [
+  {
+    id: library.split(" ").join("-"),
+    title: library,
+    subtitle:
+      "This is a fully functioning Library Management System where an admin can manage his library and a user can collect their favourite book from the library",
+    live: "http://libassista.rf.gd/",
+    images: [
+      "/assets/img/Projects/library/library.png",
+      "/assets/img/Projects/library/library2.png",
+      "/assets/img/Projects/library/library3.png",
+    ],
+    descripion:
+      "This is a fully responsive and dynamic Library Management System where a user can manage his library. A person/admin can create new books and manage books in different locations, manage fines, approve/cancel the book issue, manage the listed users, etc. On the other hand, a person/user/student can create a new account for the library and search for their favorite book. If he finds it then he/she can issue the book. Some of the screenshot from the web app is listed below",
+    tools: ["HTML", "CSS", "Boostrap", "PHP", "MySQL"],
+  },
   {
     id: netflix.split(" ").join("-"),
     title: netflix,
