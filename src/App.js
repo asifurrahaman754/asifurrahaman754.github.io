@@ -19,6 +19,7 @@ function App() {
       <ScrollingProvider>
         <Suspense fallback={<PageLoad />}>
           <Router>
+            <PageLoad />
             <ScrollTopTop />
             <Routes>
               <Route path="/" element={<HomeScreen />} />

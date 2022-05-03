@@ -1,16 +1,46 @@
 @import "../../base";
 
-.pageload_container{
-    width: 100%;
-    position: absolute;
-    z-index: 999;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: $primary-color;
+.pageload_container {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: $primary-color;
 
-    .laoding{
-        font-size: 1.2rem;
-        color: white;
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid $primary-color;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+
+    @media (max-width: 500px) {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid $primary-color;
+      width: 40px;
+      height: 40px;
     }
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
