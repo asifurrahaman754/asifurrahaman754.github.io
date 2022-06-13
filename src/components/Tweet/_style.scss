@@ -1,0 +1,47 @@
+@import "../../base";
+@import "../../mixins";
+
+.tweet {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &-header {
+    display: flex;
+    align-items: baseline;
+
+    &-title {
+      @include headingStyle();
+      margin-bottom: 0;
+    }
+
+    &-subtitle {
+      font-size: 0.8rem;
+      font-family: poppins;
+      font-weight: 500;
+      color: #383838f0;
+    }
+  }
+
+  &-wrap {
+    margin-top: 3rem;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+
+  &-content {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  &-content:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}

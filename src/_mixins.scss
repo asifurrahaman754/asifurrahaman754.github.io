@@ -28,3 +28,28 @@
     border-radius: 50px;
   }
 }
+
+@mixin AboutUsheadingStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #3d5af1;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50px;
+  }
+
+  span {
+    display: flex;
+    margin-right: 0.5rem;
+  }
+}

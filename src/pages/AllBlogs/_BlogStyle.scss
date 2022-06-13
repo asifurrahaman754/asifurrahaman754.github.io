@@ -1,0 +1,64 @@
+@import "../../_base";
+
+.main {
+  margin-top: $nav-height;
+  min-height: calc(100vh - #{$nav-height});
+
+  .blogPage_heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    span {
+      display: inline-flex;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .error {
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Montserrat";
+    color: $secondary-color;
+    padding-top: 5rem;
+  }
+
+  .loading-spinner {
+    border: 5px solid $secondary-color;
+    border-right-color: transparent;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 0.8s;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .blogPage_container {
+    padding: 0px 15px;
+
+    .blog_wrap {
+      display: grid;
+      gap: 2.5rem 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: $max-width;
+      padding: 20px 0 50px 0;
+      margin: 0 auto;
+    }
+  }
+}

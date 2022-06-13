@@ -10,7 +10,7 @@ export default function Certificate() {
   const [modalOpen, setmodalOpen] = useState(false);
   const [modalImg, setmodalImg] = useState("");
 
-  const openModal = img => {
+  const openModal = (img) => {
     setmodalOpen(true);
     setmodalImg(img);
   };
@@ -32,6 +32,8 @@ export default function Certificate() {
             key={i}
             alt={img.name}
             title={img.name}
+            width="300"
+            height="200"
             src={img.img}
             className="certificate"
             onClick={() => openModal(img.img)}

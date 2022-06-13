@@ -22,7 +22,9 @@ export default function About() {
             work remotely with a company
           </p>
           <h5>Email me at</h5>
-          <span>asifurrahaman754@gmail.com</span>
+          <a className="email" href="mailto:asifurrahaman754@gmail.com">
+            asifurrahaman754@gmail.com
+          </a>
         </div>
       </div>
     </div>

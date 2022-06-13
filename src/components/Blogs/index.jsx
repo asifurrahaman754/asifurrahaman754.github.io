@@ -13,9 +13,9 @@ export default function Blogs() {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@asifurrahaman754"
     )
-      .then(res => res.json())
-      .then(data => setBlogs(data.items.slice(0, 3)))
-      .catch(err => console.log(err));
+      .then((res) => res.json())
+      .then((data) => setBlogs(data.items.slice(0, 3)))
+      .catch((err) => console.log(err));
   }, []);
 
   return (

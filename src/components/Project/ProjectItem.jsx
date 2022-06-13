@@ -13,9 +13,7 @@ export default function ProjectItem({ item }) {
   const navigate = useNavigate();
   const location = useLocation();
   const path = item.name.split(" ").join("-");
-  const {
-    pathData: [preivouspath, setpreivouspath],
-  } = useContext(BackContextProvider);
+  const { setpreivouspath } = useContext(BackContextProvider);
 
   const handleClick = () => {
     setpreivouspath(location.pathname);
@@ -36,10 +34,20 @@ export default function ProjectItem({ item }) {
             </span>
           </button>
           <div className="project_links">
-            <a target="_blank" href={item.live} className="project_live">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href={item.live}
+              className="project_live"
+            >
               live <BsBoxArrowInUpRight />
             </a>
-            <a target="_blank" href={item.github} className="project_github">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href={item.github}
+              className="project_github"
+            >
               Github <BsBoxArrowInUpRight />
             </a>
           </div>

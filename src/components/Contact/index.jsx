@@ -1,7 +1,7 @@
 import { Section } from "react-scroll-section";
 import { BsTelephoneFill, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import ContactForm from "./ContactForm";
 import "./_style.scss";
@@ -34,27 +34,31 @@ export default function Contact() {
 
           <div className="social_links">
             <a
+              rel="noreferrer"
               target="_blank"
               href="https://www.facebook.com/asif.asifurrahaman.77/"
             >
               <FaFacebookF />
             </a>
-            <a target="_blank" href="https://github.com/asifurrahaman754">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/asifurrahaman754"
+            >
               <FaGithub />
             </a>
             <a
+              rel="noreferrer"
               target="_blank"
               href="https://www.linkedin.com/in/asifur-rahaman-8b15901a2/"
             >
               <FaLinkedinIn />
             </a>
-            {/* <a
+            <a
+              rel="noreferrer"
               target="_blank"
-              href="https://www.youtube.com/channel/UCSy77Lz6FlduetY6nMlFTOw"
+              href="https://twitter.com/asifur754"
             >
-              <FaYoutube />
-            </a> */}
-            <a target="_blank" href="https://twitter.com/asifur754">
               <BsTwitter />
             </a>
           </div>

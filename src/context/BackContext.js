@@ -6,9 +6,7 @@ export default function BackContext({ children }) {
   const [preivouspath, setpreivouspath] = useState("/");
 
   return (
-    <BackContextProvider.Provider
-      value={{ pathData: [preivouspath, setpreivouspath] }}
-    >
+    <BackContextProvider.Provider value={{ preivouspath, setpreivouspath }}>
       {children}
     </BackContextProvider.Provider>
   );
