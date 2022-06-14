@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
-import "./_style.scss"
+import "./_style.scss";
 
 export default function BlogItem({ item }) {
-  const [imageDidNotLoad, setimageDidNotLoad] = useState(false);
   const { title, guid, thumbnail, pubDate, description } = item;
 
   const monthNames = [
@@ -24,7 +22,7 @@ export default function BlogItem({ item }) {
   //remove all the html tag
   const blogDesc = description.replace(/<[^>]*>/g, "");
 
-  const getDate = pubdate => {
+  const getDate = (pubdate) => {
     const dateObj = new Date(pubdate);
     let month = monthNames[dateObj.getMonth() - 1];
     let date = dateObj.getDate();
@@ -43,7 +41,7 @@ export default function BlogItem({ item }) {
       <h3 className="blog_title">{title}</h3>
       <span className="pub_date">{getDate(pubDate)}</span>
       <p className="blog_Details">{blogDesc.substring(0, 100) + "..."}</p>
-      <a target="_blank" href={guid} className="blog_link">
+      <a rel="noreferrer" target="_blank" href={guid} className="blog_link">
         learn more{" "}
         <span className="learnMore_icon">
           <FiExternalLink />

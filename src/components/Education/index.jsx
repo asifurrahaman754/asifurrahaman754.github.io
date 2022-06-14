@@ -13,9 +13,9 @@ export default function Education() {
 
       <div className="wrapper">
         <div className="center-line">
-          <a href="#" className="scroll-icon">
+          <span className="scroll-icon">
             <i className="fas fa-caret-up"></i>
-          </a>
+          </span>
         </div>
         <div className="row row-1">
           <section>

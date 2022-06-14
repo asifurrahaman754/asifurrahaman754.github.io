@@ -8,7 +8,7 @@ export default function Modal({ img, setmodalOpen }) {
         <span onClick={() => setmodalOpen(false)} className="modal_close">
           <IoMdClose />
         </span>
-        <img src={img} alt="modal image" className="opended_img" />
+        <img src={img} alt="modal" className="opended_img" />
       </div>
     </>,
     document.getElementById("modal")
