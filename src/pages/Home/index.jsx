@@ -5,11 +5,12 @@ import Navbar from "../../components/Navbar";
 import Projects from "../../components/Project";
 import Techtool from "../../components/Techtool";
 import Tweet from "../../components/Tweet";
+import "./Home.scss";
 
 export default function HomeScreen() {
   return (
     <>
-      <div className="hero-bg">
+      <div className="header-container">
         <Navbar />
         <Hero />
       </div>

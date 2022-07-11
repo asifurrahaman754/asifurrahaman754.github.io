@@ -26,7 +26,7 @@ export default function Hero() {
 
           <a
             className="resume_btn"
-            href="https://drive.google.com/file/d/1mwzSo4zZKt0zphoV08dmUAhzcAaMvjEH/view"
+            href="https://drive.google.com/file/d/1RJPlrrTPtKeeAQrN72hgkNqn2X-R8cev/view"
           >
             <img src="/assets/img/resume.svg" alt="resume icon" />
             Resume

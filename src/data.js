@@ -1,9 +1,5 @@
 export const tools = [
   {
-    alt: "adobe xd",
-    path: "/assets/img/adobe-xd.png",
-  },
-  {
     alt: "figma",
     path: "/assets/img/figma.svg",
   },
@@ -24,10 +20,6 @@ export const tools = [
     path: "/assets/img/bootstrap.svg",
   },
   {
-    alt: "tailwind",
-    path: "/assets/img/tailwind.svg",
-  },
-  {
     alt: "git",
     path: "/assets/img/git.png",
   },
@@ -42,15 +34,6 @@ export const tools = [
   {
     alt: "MySQL",
     path: "/assets/img/mysql.svg",
-  },
-  {
-    alt: "firebase",
-    path: "/assets/img/firebase.png",
-  },
-
-  {
-    alt: "mongo db",
-    path: "/assets/img/mongo.svg",
   },
 ];
 
